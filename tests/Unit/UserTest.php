@@ -7,6 +7,7 @@ use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\User;
 
+
 class UserTest extends TestCase
 {
     /**
@@ -25,4 +26,5 @@ class UserTest extends TestCase
         $user = User::inrandomorder()->first();
         $this -> assertInternalType('int',$user->id);
     }
+
 }
