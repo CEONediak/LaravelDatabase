@@ -42,4 +42,10 @@ class UserTest extends TestCase
         //test if the name of the Admin starts with 'Ka'
         $this->assertStringStartsWith('Ka', $name);
     }
+
+    public function testassertDirectoryExists()
+    {
+        $this->assertDirectoryExists('/home/kashish/PhpstormProjects/LaravelDatabase');
+    }
+
 }
