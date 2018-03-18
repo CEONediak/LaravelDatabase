@@ -32,5 +32,4 @@ class UserTest extends TestCase
         $user = User::inrandomorder()->first();
         $this -> assertInstanceOf('App\User',$user);
     }
-
 }
