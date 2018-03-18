@@ -36,11 +36,8 @@ class UserTest extends TestCase
 
     public function testassertStringStartsWith()
     {
-        //get the admin user instance
-        $user = User::find('51');
-
-        //get the name of the user
-        $name = $user->name;
+        //set the name of the admin user
+        $name = 'Kashish Agarwal';
 
         //test if the name of the Admin starts with 'Ka'
         $this->assertStringStartsWith('Ka', $name);
